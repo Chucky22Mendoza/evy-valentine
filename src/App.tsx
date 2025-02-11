@@ -95,7 +95,10 @@ function App() {
             </h3>
             <div className="flex justify-center space-x-4">
               <button
-                onClick={() => setShowProposal(true)}
+                onClick={() => {
+                  setShowProposal(true);
+                  window.open('https://wa.me/523123109523?text=¡Sí, acepto!', '_blank');
+                }}
                 className="px-6 py-3 bg-red-500 text-white rounded-full hover:bg-red-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 ¡Sí, acepto! 💝
